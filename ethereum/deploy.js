@@ -5,7 +5,7 @@ const compiledFactory = require("./build/CampaignFactory.json");
 const provider = new HDWalletProvider(
     "nurse oven cream donor desert they stamp that heart layer medal jealous",
     // "https://rinkeby.infura.io/v3/fefd36760efb4b1c9e94f04fa3f8e3f0"
-    "https://testnetv3.matic.network"
+    "https://testnet2.matic.network"
 );
 const web3 = new Web3(provider);
 
@@ -29,3 +29,4 @@ deploy();
 //  new eth 0x76E4990eA2a0Ee8C1E340B2E1392EaACC9b7bf26
 // Matic   0x5E07d8d042d61d5100762bcC079eeFf42F4F1622
 // Matic1 0x062f7D84b3951e2acA95369878ef179597c863c2
+// Matic v2 0x5E07d8d042d61d5100762bcC079eeFf42F4F1622

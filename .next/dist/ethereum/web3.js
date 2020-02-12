@@ -17,7 +17,7 @@ if (typeof window != 'undefined' && typeof window.web3 != 'undefined') {
 } else {
     var provider = new _web2.default.providers.HttpProvider(
     // 'https://rinkeby.infura.io/v3/fefd36760efb4b1c9e94f04fa3f8e3f0'
-    'https://testnetv3.matic.network');
+    'https://testnet2.matic.network');
     web3 = new _web2.default(provider);
 }
 

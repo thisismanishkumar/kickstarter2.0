@@ -2,23 +2,36 @@ import React, {Component} from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import web3 from '../ethereum/web3';
 import Campaign from '../ethereum/campaign';
+import {Router} from '../routes';
 
 class RequestRow extends Component {
 
     onApprove = async () =>{
         const accounts = await web3.eth.getAccounts();
         const campaign = Campaign(this.props.address);
+        try{
         await campaign.methods.approveRequests(this.props.id-1).send({
             from:accounts[0]
-        })
+        });
+        Router.pushRoute(`/campaigns/${this.props.address}/requests`);
+    }catch(err){
+
+    }
     };
 
     onFinalize = async() => {
         const accounts = await web3.eth.getAccounts();
         const campaign = Campaign(this.props.address);
+        try{
         await campaign.methods.finalizeRequest(this.props.id-1).send({
             from:accounts[0]
         });
+        Router.pushRoute(`/campaigns/${this.props.address}/requests`);
+        }
+        catch(err)
+        {
+
+        }
     };
     render(){
         const { Row, Cell} = Table;

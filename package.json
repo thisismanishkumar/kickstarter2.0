@@ -1,11 +1,14 @@
 {
   "name": "crowdfund",
   "version": "1.0.0",
+  "homepage":"http://thisismanishkumar.github.io/kickstarter2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "author": "Manish Kumar",
   "license": "ISC",
@@ -24,5 +27,8 @@
     "solc": "^0.4.17",
     "truffle-hdwallet-provider": "0.0.3",
     "web3": "^1.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

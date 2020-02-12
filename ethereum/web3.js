@@ -10,7 +10,7 @@ else
 {
     const provider = new Web3.providers.HttpProvider(
         // 'https://rinkeby.infura.io/v3/fefd36760efb4b1c9e94f04fa3f8e3f0'
-        'https://testnetv3.matic.network'
+        'https://testnet2.matic.network'
     );
     web3 = new Web3(provider);
 }
