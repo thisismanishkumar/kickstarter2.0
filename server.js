@@ -2,15 +2,15 @@ const {createServer} = require('http');
 const next = require('next');
 
 const app = next({
-    dev:process.env.NODE_ENV!='production'
+    dev:process.env.NODE_ENV!=='production'
 });
 
 const routes = require('./routes');
 const handler = routes.getRequestHandler(app);
 
 app.prepare().then(()=>{
-    createServer(handler).listen(8080||process.env.PORT,err => {
+    createServer(handler).listen(process.env.PORT||8080,err => {
         if(err) throw err;
-        console.log('Ready on localhost:'+(8080||process.env.PORT));
+        console.log('Ready on localhost:'+(process.env.PORT||8080));
     }); 
 });
