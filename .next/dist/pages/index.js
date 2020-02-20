@@ -50,6 +50,9 @@ var _routes = require('../routes');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var _jsxFileName = '/home/galaxtrac/Ethereum-Solidity/solidity/CrowdFund/pages/index.js?entry';
+
+
 var CampaignIndex = function (_Component) {
     (0, _inherits3.default)(CampaignIndex, _Component);
 
@@ -65,18 +68,71 @@ var CampaignIndex = function (_Component) {
             var items = this.props.campaigns.map(function (address) {
                 return {
                     header: address,
-                    description: _react2.default.createElement(_routes.Link, { route: '/campaigns/' + address }, _react2.default.createElement('a', null, 'View Campaign')),
+                    description: _react2.default.createElement(_routes.Link, { route: '/campaigns/' + address, __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 20
+                        }
+                    }, _react2.default.createElement('a', {
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 21
+                        }
+                    }, 'View Campaign')),
                     fluid: true,
                     raised: true
                 };
             });
-            return _react2.default.createElement(_semanticUiReact.Card.Group, { items: items });
+            return _react2.default.createElement(_semanticUiReact.Card.Group, { items: items, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 28
+                }
+            });
         }
     }, {
         key: 'render',
         value: function render() {
 
-            return _react2.default.createElement(_Layouts2.default, null, _react2.default.createElement('div', null, _react2.default.createElement('h3', null, 'Open Campaign'), _react2.default.createElement(_routes.Link, { route: '/campaigns/new' }, _react2.default.createElement('a', null, _react2.default.createElement(_semanticUiReact.Button, { primary: true, animated: 'fade', floated: 'right' }, _react2.default.createElement(_semanticUiReact.Button.Content, { visible: true }, 'Create Campaign'), _react2.default.createElement(_semanticUiReact.Button.Content, { hidden: true }, _react2.default.createElement(_semanticUiReact.Icon, { name: 'add' }))))), this.renderCampaigns()));
+            return _react2.default.createElement(_Layouts2.default, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 33
+                }
+            }, _react2.default.createElement('div', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
+                }
+            }, _react2.default.createElement('h3', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 35
+                }
+            }, 'Open Campaign'), _react2.default.createElement(_routes.Link, { route: '/campaigns/new', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 36
+                }
+            }, _react2.default.createElement('a', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 37
+                }
+            }, _react2.default.createElement(_semanticUiReact.Button, { primary: true, animated: 'fade', floated: 'right', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 38
+                }
+            }, _react2.default.createElement(_semanticUiReact.Button.Content, { visible: true, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 39
+                }
+            }, 'Create Campaign'), _react2.default.createElement(_semanticUiReact.Button.Content, { hidden: true, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 40
+                }
+            }, _react2.default.createElement(_semanticUiReact.Icon, { name: 'add', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 40
+                }
+            }))))), this.renderCampaigns()));
         }
     }], [{
         key: 'getInitialProps',
@@ -114,3 +170,4 @@ var CampaignIndex = function (_Component) {
 }(_react.Component);
 
 exports.default = CampaignIndex;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiZmFjdG9yeSIsIkNhcmQiLCJCdXR0b24iLCJJY29uIiwiTGF5b3V0IiwiTGluayIsIkNhbXBhaWduSW5kZXgiLCJpdGVtcyIsInByb3BzIiwiY2FtcGFpZ25zIiwibWFwIiwiaGVhZGVyIiwiYWRkcmVzcyIsImRlc2NyaXB0aW9uIiwiZmx1aWQiLCJyYWlzZWQiLCJyZW5kZXJDYW1wYWlnbnMiLCJtZXRob2RzIiwiZ2V0RGVwbG95ZWRDYW1wYWlnbnMiLCJjYWxsIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBYTs7OztBQUNwQixBQUFTLEFBQU0sQUFBUTs7QUFDdkIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQVMsQUFBWTs7Ozs7OztJLEFBRWY7Ozs7Ozs7Ozs7OzBDQVFnQixBQUNkO2dCQUFNLGFBQVEsQUFBSyxNQUFMLEFBQVcsVUFBWCxBQUFxQixJQUFJLG1CQUFXLEFBQzlDOzs0QkFBTyxBQUNLLEFBQ1I7aURBQ0EsQUFBQyw4QkFBSyx1QkFBTixBQUEyQjtzQ0FBM0I7d0NBQUEsQUFDQTtBQURBO3FCQUFBLGtCQUNBLGNBQUE7O3NDQUFBO3dDQUFBO0FBQUE7QUFBQSx1QkFKRyxBQUdILEFBQ0EsQUFHQTsyQkFQRyxBQU9JLEFBQ1A7NEJBUkosQUFBTyxBQVFJLEFBRWQ7QUFWVSxBQUNIO0FBRlIsQUFBYyxBQVlkLGFBWmM7aURBWVAsQUFBQyxzQkFBRCxBQUFNLFNBQU0sT0FBWixBQUFtQjs4QkFBbkI7Z0NBQVAsQUFBTyxBQUNWO0FBRFU7YUFBQTs7OztpQ0FFRixBQUVMOzttQ0FDSSxBQUFDOzs4QkFBRDtnQ0FBQSxBQUNJO0FBREo7QUFBQSxhQUFBLGtCQUNJLGNBQUE7OzhCQUFBO2dDQUFBLEFBQ0k7QUFESjtBQUFBLCtCQUNJLGNBQUE7OzhCQUFBO2dDQUFBO0FBQUE7QUFBQSxlQURKLEFBQ0ksQUFDQSxrQ0FBQSxBQUFDLDhCQUFLLE9BQU4sQUFBWTs4QkFBWjtnQ0FBQSxBQUNJO0FBREo7K0JBQ0ksY0FBQTs7OEJBQUE7Z0NBQUEsQUFDSTtBQURKO0FBQUEsK0JBQ0ksQUFBQyx5Q0FBTyxTQUFSLE1BQWdCLFVBQWhCLEFBQXlCLFFBQU8sU0FBaEMsQUFBd0M7OEJBQXhDO2dDQUFBLEFBQ0k7QUFESjsrQkFDSyxjQUFELHdCQUFBLEFBQVEsV0FBUSxTQUFoQjs4QkFBQTtnQ0FBQTtBQUFBO2VBREosQUFDSSxBQUNBLG9DQUFDLGNBQUQsd0JBQUEsQUFBUSxXQUFRLFFBQWhCOzhCQUFBO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixBQUFDLHVDQUFLLE1BQU4sQUFBVzs4QkFBWDtnQ0FOdkMsQUFFSSxBQUNJLEFBQ0ksQUFFSSxBQUF1QixBQUlsQztBQUprQzt5QkFSL0MsQUFDSSxBQUNJLEFBVUssQUFBSyxBQUlyQjs7Ozs7Ozs7Ozs7O3VDQXRDMkIsa0JBQUEsQUFBUSxRQUFSLEFBQWdCLHVCLEFBQWhCLEFBQXVDOztpQ0FBekQ7QTtpRUFDQyxFQUFFLFcsQUFBRjs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBLEFBSmEsQUE0QzVCOztrQkFBQSxBQUFlIiwiZmlsZSI6ImluZGV4LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9ob21lL2dhbGF4dHJhYy9FdGhlcmV1bS1Tb2xpZGl0eS9zb2xpZGl0eS9Dcm93ZEZ1bmQifQ==

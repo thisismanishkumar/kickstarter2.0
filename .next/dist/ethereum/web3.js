@@ -4,21 +4,63 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _regenerator = require('babel-runtime/regenerator');
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
 var _web = require('web3');
 
 var _web2 = _interopRequireDefault(_web);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var web3 = void 0;
+var _this = undefined;
 
-if (typeof window != 'undefined' && typeof window.web3 != 'undefined') {
+var web3 = void 0;
+if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
+    window.addEventListener('load', (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
+        return _regenerator2.default.wrap(function _callee$(_context) {
+            while (1) {
+                switch (_context.prev = _context.next) {
+                    case 0:
+                        if (!window.ethereum) {
+                            _context.next = 10;
+                            break;
+                        }
+
+                        window.web3 = new _web2.default(window.ethereum);
+                        _context.prev = 2;
+                        _context.next = 5;
+                        return window.ethereum.enable();
+
+                    case 5:
+                        _context.next = 10;
+                        break;
+
+                    case 7:
+                        _context.prev = 7;
+                        _context.t0 = _context['catch'](2);
+
+                        console.log("Permission denied!");
+
+                    case 10:
+                    case 'end':
+                        return _context.stop();
+                }
+            }
+        }, _callee, _this, [[2, 7]]);
+    })));
     web3 = new _web2.default(window.web3.currentProvider);
 } else {
-    var provider = new _web2.default.providers.HttpProvider(
-    // 'https://rinkeby.infura.io/v3/fefd36760efb4b1c9e94f04fa3f8e3f0'
-    'https://testnet2.matic.network');
+    console.log('a');
+    var provider = new _web2.default.providers.HttpProvider('https://testnet2.matic.network');
+    // const provider=new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/fecaf04a298945df852fef4c456adca3');
     web3 = new _web2.default(provider);
 }
 
 exports.default = web3;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImV0aGVyZXVtL3dlYjMuanMiXSwibmFtZXMiOlsiV2ViMyIsIndlYjMiLCJ3aW5kb3ciLCJhZGRFdmVudExpc3RlbmVyIiwiZXRoZXJldW0iLCJlbmFibGUiLCJjb25zb2xlIiwibG9nIiwiY3VycmVudFByb3ZpZGVyIiwicHJvdmlkZXIiLCJwcm92aWRlcnMiLCJIdHRwUHJvdmlkZXIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFQOzs7Ozs7OztBQUVBLElBQUksWUFBSjtBQUNBLElBQUcsT0FBTyxBQUFQLFdBQWdCLEFBQWhCLGVBQStCLE9BQU8sT0FBTyxBQUFkLFNBQXFCLEFBQXZELGFBQW1FLEFBQy9EO1dBQU8sQUFBUCxpQkFBd0IsQUFBeEIsaUZBQWdDLG1CQUFBO3NFQUFBO3NCQUFBO2lEQUFBO3lCQUFBOzZCQUV4QixPQUFPLEFBRmlCLFVBQUE7NENBQUE7QUFBQTtBQUd4Qjs7K0JBQU8sQUFBUCxPQUFjLEFBQUksQUFBSixrQkFBUyxPQUFPLEFBQWhCLEFBQWQsQUFId0I7d0NBQUE7d0NBQUE7K0JBTWQsT0FBTyxBQUFQLFNBQWdCLEFBQWhCLEFBTmM7O3lCQUFBO3dDQUFBO0FBQUE7O3lCQUFBO3dDQUFBO3dEQVVwQjs7Z0NBQVEsQUFBUixJQUFZLEFBQVosQUFWb0I7O3lCQUFBO3lCQUFBO3dDQUFBOztBQUFBO2dDQUFBO0FBQWhDLEFBZ0JKO1dBQUssQUFBSSxBQUFKLGtCQUFTLE9BQU8sQUFBUCxLQUFZLEFBQXJCLEFBQUwsQUFDQztBQWxCRCxPQW1CSSxBQUNBO1lBQVEsQUFBUixJQUFZLEFBQVosQUFDQTtRQUFNLFdBQVcsSUFBSSxjQUFLLEFBQUwsVUFBZSxBQUFuQixhQUNuQixBQURtQixBQUFqQixBQUdBO0FBQ0E7V0FBSyxBQUFJLEFBQUosa0JBQVMsQUFBVCxBQUFMLEFBQ0g7QUFFRDs7a0JBQWUsQUFBZiIsImZpbGUiOiJ3ZWIzLmpzIiwic291cmNlUm9vdCI6Ii9ob21lL2dhbGF4dHJhYy9FdGhlcmV1bS1Tb2xpZGl0eS9zb2xpZGl0eS9Dcm93ZEZ1bmQifQ==
