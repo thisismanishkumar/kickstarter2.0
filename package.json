@@ -5,10 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    
     "dev": "node server.js",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "build":"next build",
+    "start":"NODE_ENV=production node server.js"
   },
   "author": "Manish Kumar",
   "license": "ISC",
