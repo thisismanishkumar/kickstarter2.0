@@ -16,3 +16,5 @@ money then only money would be transfered otherwise not.
 + $ npm run dev
 + install __metamask__ or any other wallet-provider with __matic__ account open
 + open localhost:8080 in web browser
+### Contributors:-
+* [Manish Kumar](https://github.com/thisismanishkumar)
